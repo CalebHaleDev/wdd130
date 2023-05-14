@@ -1,0 +1,34 @@
+body {
+    background-color: #fd95B8;
+    color: white;
+    text-align: center;
+    margin: 0 35%;
+}
+h1, #gospel-principle-list, .big-quote-source{
+    font-family: Geneva, Tahoma, sans-serif;
+}
+h1:hover {
+    color: black;
+}
+.small-quote {
+    font-size: 1em;
+}
+.small-quote-source{
+font-weight: 700;
+}
+#gospel-principle-list{
+    color: black;
+    font-weight: 700;
+    text-align: left;
+}
+#portrait {
+    
+}
+.big-quote {
+    font-size: 2.5em;
+}
+.big-quote-source{  /*meant to be a footer?*/
+color: black;
+}
+
+/*fonts are different, check those*/
