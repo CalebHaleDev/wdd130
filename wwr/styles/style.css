@@ -114,7 +114,7 @@ nav a:hover{
 main {
     display: grid;
 }
-main .home-grid {
+main.home-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
