@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
+    <title>Parallax Testing</title>
+</head>
+<body>
+    <script>
+    window.addEventListener('scroll', () => {
+        let parent =  document.getElementById('parallax-container');
+        let children = parent.getElementsByTagName('div');
+        for(let i = 0; i < children.length; i++) {
+          children[i].style.transform = 'translateY(-' + (window.pageYOffset < 265 ? (window.pageYOffset * i / children.length) : (265 * i / children.length)) + 'px)';
+          console.log(window.pageYOffset);
+        }
+      }, false)
+      </script>
+    <div id="parallax-container">
+        <div style="background: url(images/indigo-hills-layer-0C.png);background-repeat: no-repeat;"></div>
+        <div style="background: url(images/indigo-hills-layer-1C.png);background-repeat: no-repeat;"></div>
+        <div style="background: url(images/indigo-hills-layer-2C.png);background-repeat: no-repeat;"></div>
+        <div style="background: url(images/indigo-hills-layer-3C.png);background-repeat: no-repeat;"></div>
+        <div style="background: url(images/indigo-hills-layer-4C.png);background-repeat: no-repeat;"></div>
+        <div style="background: url(images/indigo-hills-layer-5C.png);background-repeat: no-repeat;"></div>
+        <div style="background: url(images/indigo-hills-layer-6C.png);background-repeat: no-repeat;"></div>
+        <div style="background: url(images/indigo-hills-layer-7C.png);background-repeat: no-repeat;"></div>
+      </div>
+        <div id="content">
+            <p>...</p><br><br><br><br><br><br><br><br><br><br><br><p>...</p><br><br><br><br><br><br><br><br>
+      </div>
+      
+</body>
+</html>
