@@ -222,7 +222,6 @@ footer .social img{
     */
 }
 
-
 .faq-entry {
     display: flex;
     flex-direction: row;
@@ -256,6 +255,9 @@ footer .social img{
     line-height: 1.4;
 }
 
+.faq-answer p {
+    padding: 1em 0;    /*this doesn't seem to work*/
+}
 
 
 
