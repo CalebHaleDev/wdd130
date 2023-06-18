@@ -200,7 +200,7 @@ footer .social img{
 
 /* FAQ page*/
 #faq-title {
-    text-align: bottom;
+    /*text-align: bottom? (This isn't correct format, just a reminder the title could use some reworking for different screen scales, etc)*/
 }
 
 .hero-divider {
