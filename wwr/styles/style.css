@@ -61,7 +61,7 @@ nav a:hover{
 }
 #hero-box {
     grid-column: 1/4;
-    grid-row: 1/3;
+    grid-row: 1/4;
     z-index: -1;
 }
 #hero-img{
@@ -71,7 +71,7 @@ nav a:hover{
 #hero-msg {
     grid-column: 2/3;
     grid-row: 1/3;
-    margin-top: 100px;
+    margin-top: 140px;
 }
 .msg{
     background-color: #FFE66D;
@@ -194,6 +194,67 @@ footer .social img{
     padding-top: 10px;
 }
 
+
+
+
+
+/* FAQ page*/
+#faq-title {
+    text-align: bottom;
+}
+
+.hero-divider {
+    grid-column: 1/3;
+    grid-row: 2/3;
+/*    grid-row: 3/4;
+*/
+}
+
+#oar-divider {
+    transform: rotate(46.5deg);
+    width: 100%;
+    margin-top: -140px;
+
+    /* ideas:
+    display:
+    object-fit:
+    justify something?
+    */
+}
+
+
+.faq-entry {
+    display: flex;
+    flex-direction: row;
+    padding: 60px 40px;
+}
+
+.faq-entry:nth-of-type(2n) .faq-answer {
+    order: 1; /* this puts answers first, so the answer will be on the left instead.*/
+}
+
+.faq-entry:nth-of-type(2n) .faq-question {
+    order: 2; /* this puts questions second, so the answer will be on the left instead.*/
+}
+
+.faq-answer, .faq-question {
+    display: flex;
+    width: 48%;
+    padding: 35px 50px;
+    
+}
+
+.faq-question {
+    width: 30%;
+    font-size: 2em;
+    font-family: "Shadows Into Light", serif;
+}
+
+.faq-answer {
+    width: 66%;
+    text-align: left;
+    line-height: 1.4;
+}
 
 
 
