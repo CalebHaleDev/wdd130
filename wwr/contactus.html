@@ -25,7 +25,26 @@
             </nav>
         </header>
         <main>
+<form action="url_to_send_to" method="method_to_send_get_or_post">
+    <ul class="form">
+        <li>
+            <label for="name">Name:</label>
+            <input type="text" id="form-name" name="user_name" value="John Doe"/>
+        </li>
+        <li>
+            <label for="mail">Email:</label>
+            <input type="email" id="form-mail" name="user_email" value="example@website.com"/>
+        </li>
+        <li>
+            <label for="msg">Message:</label>
+            <textarea id="form-msg" name="user_message">Help me</textarea>
+        </li>
+        <li class="button">
+            <button type="submit">Submit</button>   <!--buttom is more versatile than input because it allows all HTML inside it, not just text for the label-->
+          </li>
+    </ul>
 
+</form>
         </main>
         <Footer>
             <p>Sum'er Rafting &copy; 2023 - Caleb Hale</p>
