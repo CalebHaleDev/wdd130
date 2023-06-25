@@ -43,7 +43,7 @@ header nav a:hover {
     background-color: #065064;
 }
 header nav .this-page {
-    text-decoration: underline;
+    border-bottom: 5px solid #67e26d;
 }
 main {
     /*get below nav*/
