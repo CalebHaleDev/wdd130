@@ -59,6 +59,9 @@ main {
     display: flex;
     justify-content: space-between;
 }
+.small-section-wrapper.center {
+    justify-content: center;
+}
 .small-section-wrapper .small-section p {
     padding: 0 10px;
 }
@@ -84,6 +87,7 @@ main {
     max-width: 50%;
     align-items: center;
     margin: auto;
+    border-radius: 20px;
 }
 
 
