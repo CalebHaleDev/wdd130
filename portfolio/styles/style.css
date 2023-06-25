@@ -3,9 +3,11 @@
 .title{
     text-align: center;
     margin: 2em 0;
+    font-family: "Ubuntu";
 }
 body {
     margin: 0;
+    font-family: "Lora";
 }
 a{
     text-decoration: none;
@@ -25,6 +27,7 @@ header, footer {
     /*keep 16:10 ratio to logo width tall*/
 }
 header nav {
+    font-family: "Ubuntu";
     font-size: 2em;
     float: right;
     margin: 50px 75px;
