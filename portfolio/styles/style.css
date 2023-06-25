@@ -23,6 +23,8 @@ header, footer {
 }
 header nav {
     font-size: 2em;
+    float: right;
+    margin: 50px 75px;
     /*make right-aligned*/
 }
 header nav a {
