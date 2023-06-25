@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Lora&family=Open+Sans&family=Shadows+Into+Light&family=Ubuntu:wght@400;500&display=swap');
 
-/*add title class later*/
-h1 {
+.title{
     text-align: center;
     margin: 2em 0;
 }
 body {
     margin: 0;
+}
+a:hover {
+    color: #67e26d;
+    text-shadow:1px 1px #494846;
 }
 #logo {
     size: 1em;
@@ -19,12 +22,17 @@ header, footer {
     /*keep 16:10 ratio to logo width tall*/
 }
 header nav {
+    font-size: 2em;
     /*make right-aligned*/
 }
 header nav a {
     color: #67e26d;
     margin: auto;
-    padding: 30px;
+    padding: 40px;
+    text-decoration: none;
+}
+header nav .this-page {
+    text-decoration: underline;
 }
 main {
     /*get below nav*/
@@ -36,6 +44,7 @@ main {
 }
 .primary-section img {
     height: 100%;
+    border-radius: 10px;
 }
 .primary-section p {
     padding: 0 100px;
