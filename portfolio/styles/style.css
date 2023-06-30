@@ -13,6 +13,12 @@ body {
 a{
     text-decoration: none;
 }
+a:link {
+/*I could change the link color but I like the classic blue*/
+}
+a:visited {
+   color: #065064;
+}
 a:hover {
     color: #67e26d;
     text-shadow:1px 1px #494846;
@@ -39,6 +45,9 @@ header nav a {
     margin: auto;
     padding: 40px;
     text-decoration: none;
+}
+header nav a:visited {
+    color: #67e26d;
 }
 header nav a:hover {
     background-color: #065064;
@@ -85,6 +94,15 @@ main {
 }
 .small-section img {
     max-height: 250px;
+    border-radius: 20px;
+}
+.small-section img:hover {
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: 5px solid white;
+    transition-duration: .25s;
+    transition-property: border-color;
+    border-color: #065064;
 }
 .small-section p {
     padding: 0 50px;
