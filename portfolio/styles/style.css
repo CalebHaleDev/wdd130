@@ -24,7 +24,6 @@ a:hover {
     text-shadow:1px 1px #494846;
 }
 #logo {
-    size: 1em;
     width: 100px;
     float:left;
 }
@@ -128,4 +127,16 @@ footer {
 }
 footer a {
     color: white;
+}
+
+
+
+/*why doesn't this work?*/
+@media screen and (max-width: 900px) {
+    .primary-section img{
+        float: left;
+    }
+    .small-section {
+        display:block;
+    }
 }
