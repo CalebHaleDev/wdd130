@@ -6,8 +6,12 @@
     font-family: "Ubuntu";
     color: #003855;
 }
+.title:first-of-type{
+    padding-top: 160px;
+}
 body {
     margin: 0;
+    padding: 0;
     font-family: "Lora";
 }
 a{
@@ -26,10 +30,12 @@ a:hover {
 #logo {
     width: 100px;
     float:left;
+    transition: 0.4s;
 }
 header, footer {
     background-color: #494846; 
     height: 160px;
+    width: 100%;
     /*keep 16:10 ratio to logo width tall*/
 }
 header nav {
@@ -37,12 +43,11 @@ header nav {
     font-size: 2em;
     float: right;
     margin: 50px 75px;
-    /*make right-aligned*/
 }
-header nav a {
+header .nav-link {
     color: #67e26d;
     margin: auto;
-    padding: 40px;
+    padding: 40px; /*padding is handled by the javascript resizer*/ 
     text-decoration: none;
 }
 header nav a:visited {
@@ -54,6 +59,12 @@ header nav a:hover {
 header nav .this-page {
     border-bottom: 5px solid #67e26d;
 }
+#navbar {
+    transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+    position: fixed; /* Sticky/fixed navbar */ 
+    top: 0px;
+}
+
 main {
     /*get below nav*/
     max-width: 70%;
@@ -96,7 +107,6 @@ main {
     border-radius: 20px;
 }
 .small-section img:hover {
-    /*max-height: 250px;*/
     border-radius: 20px;
     box-sizing: border-box;
     border: 5px solid white;
@@ -125,6 +135,7 @@ main {
 
 footer {
     padding-left: 8%;
+    margin-top: 150px;
 }
 footer a {
     color: white;
